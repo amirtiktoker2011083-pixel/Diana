@@ -19,7 +19,7 @@ body{
     height:100vh;
     overflow:hidden;
 
-    /* ТВОЙ ФОН */
+    /* ФОН */
     background:url("fon.jpg") no-repeat center center;
     background-size:cover;
 
@@ -32,10 +32,11 @@ body{
     height:100%;
 }
 
-/* Окошки */
+/* РАМКИ */
 
 .frame{
     position:absolute;
+
     width:220px;
     height:220px;
 
@@ -53,7 +54,7 @@ body{
     transform:scale(1.05);
 }
 
-/* Фото внутри */
+/* КАРТИНКИ */
 
 .frame img{
     width:100%;
@@ -61,7 +62,7 @@ body{
     object-fit:cover;
 }
 
-/* Позиции */
+/* ПОЗИЦИИ */
 
 .frame1{
     top:120px;
@@ -78,7 +79,7 @@ body{
     left:100px;
 }
 
-/* Зайчик */
+/* ЗАЙЧИК */
 
 .bunny{
     position:absolute;
@@ -93,7 +94,7 @@ body{
     pointer-events:none;
 }
 
-/* Адаптация под телефон */
+/* ТЕЛЕФОН */
 
 @media (max-width:768px){
 
@@ -129,22 +130,22 @@ body{
 
 <div class="container">
 
-    <!-- Фото 1 -->
+    <!-- ФОТО 1 -->
     <div class="frame frame1">
-        <img src="diana1.jpg" alt="">
+        <img src="d1.jpg" alt="">
     </div>
 
-    <!-- Фото 2 -->
+    <!-- ФОТО 2 -->
     <div class="frame frame2">
-        <img src="diana2.jpg" alt="">
+        <img src="d2.jpg" alt="">
     </div>
 
-    <!-- Фото 3 -->
+    <!-- ФОТО 3 -->
     <div class="frame frame3">
-        <img src="diana3.jpg" alt="">
+        <img src="d3.jpg" alt="">
     </div>
 
-    <!-- Зайчик -->
+    <!-- ЗАЙЧИК -->
     <img src="bunny.png" class="bunny" alt="">
 
 </div>
