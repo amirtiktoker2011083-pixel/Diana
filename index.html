@@ -19,7 +19,6 @@ body{
     height:100vh;
     overflow:hidden;
 
-    /* ФОН */
     background:url("fon.jpg") no-repeat center center;
     background-size:cover;
 
@@ -32,29 +31,22 @@ body{
     height:100%;
 }
 
-/* РАМКИ */
+/* ОКНА */
 
 .frame{
     position:absolute;
 
-    width:220px;
-    height:220px;
-
-    background:white;
-
-    border:7px solid black;
-    border-radius:12px;
+    width:145px;
+    height:145px;
 
     overflow:hidden;
 
-    transition:0.3s;
-}
+    border-radius:12px;
 
-.frame:hover{
-    transform:scale(1.05);
-}
+    background:white;
 
-/* КАРТИНКИ */
+    border:5px solid black;
+}
 
 .frame img{
     width:100%;
@@ -66,60 +58,76 @@ body{
 
 .frame1{
     top:120px;
-    left:180px;
+    left:35px;
+
+    transform:rotate(-1deg);
 }
 
 .frame2{
-    top:340px;
-    right:160px;
+    top:430px;
+    right:35px;
+
+    transform:rotate(1deg);
 }
 
 .frame3{
-    bottom:120px;
-    left:100px;
+    bottom:170px;
+    left:35px;
+
+    transform:rotate(-1deg);
 }
 
-/* ЗАЙЧИК */
+/* ПАДАЮЩИЕ ЗАЙЧИКИ */
 
-.bunny{
+.bunny-fall{
     position:absolute;
 
-    bottom:20px;
-    left:50%;
+    width:90px;
 
-    transform:translateX(-50%);
+    top:-120px;
 
-    width:240px;
+    animation:fall linear infinite;
 
     pointer-events:none;
 }
 
-/* ТЕЛЕФОН */
+/* РАЗНЫЕ ПОЗИЦИИ */
 
-@media (max-width:768px){
+.b1{
+    left:5%;
+    animation-duration:18s;
+}
 
-    .frame{
-        width:160px;
-        height:160px;
+.b2{
+    left:25%;
+    animation-duration:22s;
+}
+
+.b3{
+    left:45%;
+    animation-duration:20s;
+}
+
+.b4{
+    left:65%;
+    animation-duration:24s;
+}
+
+.b5{
+    left:82%;
+    animation-duration:19s;
+}
+
+/* АНИМАЦИЯ */
+
+@keyframes fall{
+
+    0%{
+        transform:translateY(-150px) rotate(0deg);
     }
 
-    .frame1{
-        top:90px;
-        left:20px;
-    }
-
-    .frame2{
-        top:320px;
-        right:20px;
-    }
-
-    .frame3{
-        bottom:140px;
-        left:20px;
-    }
-
-    .bunny{
-        width:180px;
+    100%{
+        transform:translateY(120vh) rotate(360deg);
     }
 }
 
@@ -130,23 +138,27 @@ body{
 
 <div class="container">
 
-    <!-- ФОТО 1 -->
+    <!-- ФОТО -->
+
     <div class="frame frame1">
         <img src="d1.jpg" alt="">
     </div>
 
-    <!-- ФОТО 2 -->
     <div class="frame frame2">
         <img src="d2.jpg" alt="">
     </div>
 
-    <!-- ФОТО 3 -->
     <div class="frame frame3">
         <img src="d3.jpg" alt="">
     </div>
 
-    <!-- ЗАЙЧИК -->
-    <img src="bunny.png" class="bunny" alt="">
+    <!-- ПАДАЮЩИЕ ЗАЙЧИКИ -->
+
+    <img src="bunny.png" class="bunny-fall b1" alt="">
+    <img src="bunny.png" class="bunny-fall b2" alt="">
+    <img src="bunny.png" class="bunny-fall b3" alt="">
+    <img src="bunny.png" class="bunny-fall b4" alt="">
+    <img src="bunny.png" class="bunny-fall b5" alt="">
 
 </div>
 
