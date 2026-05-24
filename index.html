@@ -21,13 +21,14 @@ body{
 
     font-family:Arial,sans-serif;
 
-    background:
-    linear-gradient(
-    180deg,
-    #ffd6ea,
-    #ffc7e2,
-    #ffb8da
-    );
+    /* РОЗОВЫЙ ФОН В ГОРОШЕК */
+
+    background-color:#ffb6d9;
+
+    background-image:
+    radial-gradient(white 2px, transparent 2px);
+
+    background-size:40px 40px;
 
     position:relative;
 }
@@ -49,7 +50,7 @@ body::before{
     top:-120px;
     left:-120px;
 
-    filter:blur(25px);
+    filter:blur(30px);
 }
 
 body::after{
@@ -67,15 +68,15 @@ body::after{
     bottom:-100px;
     right:-100px;
 
-    filter:blur(20px);
+    filter:blur(25px);
 }
 
-/* ФОТО БЕЗ РАМОК */
+/* ФОТО */
 
 .photo{
     position:absolute;
 
-    width:140px;
+    width:145px;
 
     z-index:3;
 
@@ -86,24 +87,24 @@ body::after{
     transform:scale(1.05);
 }
 
-/* ХАОТИЧНОЕ РАСПОЛОЖЕНИЕ */
+/* ХАОТИЧНО */
 
 .photo1{
-    top:120px;
+    top:110px;
     left:25px;
 
     transform:rotate(-5deg);
 }
 
 .photo2{
-    top:310px;
+    top:290px;
     right:30px;
 
     transform:rotate(6deg);
 }
 
 .photo3{
-    bottom:130px;
+    bottom:120px;
     left:75px;
 
     transform:rotate(-4deg);
@@ -114,64 +115,17 @@ body::after{
 .sakura{
     position:absolute;
 
-    top:-50px;
+    top:-60px;
 
     font-size:28px;
 
-    opacity:0.8;
+    opacity:0.9;
 
     animation:fall linear infinite;
 
     z-index:1;
 
     pointer-events:none;
-}
-
-/* РАЗНЫЕ ЛЕПЕСТКИ */
-
-.s1{
-    left:5%;
-    animation-duration:12s;
-}
-
-.s2{
-    left:15%;
-    animation-duration:18s;
-    animation-delay:2s;
-}
-
-.s3{
-    left:28%;
-    animation-duration:14s;
-    animation-delay:1s;
-}
-
-.s4{
-    left:42%;
-    animation-duration:20s;
-    animation-delay:3s;
-}
-
-.s5{
-    left:56%;
-    animation-duration:13s;
-}
-
-.s6{
-    left:68%;
-    animation-duration:17s;
-    animation-delay:2s;
-}
-
-.s7{
-    left:82%;
-    animation-duration:15s;
-    animation-delay:4s;
-}
-
-.s8{
-    left:92%;
-    animation-duration:19s;
 }
 
 /* АНИМАЦИЯ */
@@ -187,13 +141,13 @@ body::after{
     }
 
     10%{
-        opacity:0.9;
+        opacity:1;
     }
 
     100%{
         transform:
         translateY(120vh)
-        translateX(60px)
+        translateX(70px)
         rotate(360deg);
 
         opacity:0;
@@ -205,16 +159,37 @@ body::after{
 
 <body>
 
-<!-- ПАДАЮЩАЯ САКУРА -->
+<!-- 25 ЛЕПЕСТКОВ -->
 
-<div class="sakura s1">🌸</div>
-<div class="sakura s2">🌸</div>
-<div class="sakura s3">🌸</div>
-<div class="sakura s4">🌸</div>
-<div class="sakura s5">🌸</div>
-<div class="sakura s6">🌸</div>
-<div class="sakura s7">🌸</div>
-<div class="sakura s8">🌸</div>
+<div class="sakura" style="left:2%;animation-duration:7s;">🌸</div>
+<div class="sakura" style="left:6%;animation-duration:9s;animation-delay:1s;">🌸</div>
+<div class="sakura" style="left:10%;animation-duration:8s;animation-delay:2s;">🌸</div>
+<div class="sakura" style="left:14%;animation-duration:10s;">🌸</div>
+<div class="sakura" style="left:18%;animation-duration:7s;animation-delay:3s;">🌸</div>
+
+<div class="sakura" style="left:22%;animation-duration:9s;">🌸</div>
+<div class="sakura" style="left:26%;animation-duration:8s;animation-delay:1s;">🌸</div>
+<div class="sakura" style="left:30%;animation-duration:11s;">🌸</div>
+<div class="sakura" style="left:34%;animation-duration:7s;animation-delay:2s;">🌸</div>
+<div class="sakura" style="left:38%;animation-duration:9s;">🌸</div>
+
+<div class="sakura" style="left:42%;animation-duration:8s;">🌸</div>
+<div class="sakura" style="left:46%;animation-duration:10s;animation-delay:3s;">🌸</div>
+<div class="sakura" style="left:50%;animation-duration:7s;">🌸</div>
+<div class="sakura" style="left:54%;animation-duration:9s;animation-delay:2s;">🌸</div>
+<div class="sakura" style="left:58%;animation-duration:8s;">🌸</div>
+
+<div class="sakura" style="left:62%;animation-duration:11s;">🌸</div>
+<div class="sakura" style="left:66%;animation-duration:7s;animation-delay:1s;">🌸</div>
+<div class="sakura" style="left:70%;animation-duration:9s;">🌸</div>
+<div class="sakura" style="left:74%;animation-duration:8s;animation-delay:2s;">🌸</div>
+<div class="sakura" style="left:78%;animation-duration:10s;">🌸</div>
+
+<div class="sakura" style="left:82%;animation-duration:7s;">🌸</div>
+<div class="sakura" style="left:86%;animation-duration:9s;animation-delay:3s;">🌸</div>
+<div class="sakura" style="left:90%;animation-duration:8s;">🌸</div>
+<div class="sakura" style="left:94%;animation-duration:10s;animation-delay:2s;">🌸</div>
+<div class="sakura" style="left:98%;animation-duration:7s;">🌸</div>
 
 <!-- ФОТО -->
 
